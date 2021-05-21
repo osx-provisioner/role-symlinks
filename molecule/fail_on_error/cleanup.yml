@@ -1,0 +1,12 @@
+---
+- name: Clean Up
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: Load Scenario Variables
+      include_vars: vars/main.yml
+    - name: Clean Up
+      file:
+        path: "{{ item.link }}"
+        state: absent
+      loop: "{{ symlinks }}"

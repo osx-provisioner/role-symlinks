@@ -1,0 +1,12 @@
+---
+
+symlinks_user: "{{ lookup('env', 'USER') }}"
+symlinks_ignore_errors: false
+
+symlinks:
+  - link: /Users/{{ symlinks_user }}/test1
+    target: /Users/{{ symlinks_user }}/Downloads
+  - link: /Users/{{ symlinks_user }}/test2
+    target: /Users/{{ symlinks_user }}/Downloads
+  - link: /Users/{{ symlinks_user }}/test3
+    target: /Users/{{ symlinks_user }}/Downloads

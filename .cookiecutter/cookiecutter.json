@@ -1,8 +1,8 @@
 {
-    "_template": "ansible-workbench/",
+    "_template": "https://github.com/Shared-Vision-Solutions/ansible-workbench.git",
     "author": "Niall Byrne",
     "company": "Shared Vision Solutions",
-    "description": "Ansible role that populates configured symlinks.",
+    "description": "Ansible role that creates the configured symlinks.",
     "email": "niall@niallbyrne.ca",
     "galaxy_namespace_slug": "osx_provisioner",
     "galaxy_role_slug": "symlinks",

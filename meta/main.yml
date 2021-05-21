@@ -3,7 +3,7 @@ galaxy_info:
   role_name: symlinks
   namespace: osx_provisioner
   author: Niall Byrne
-  description: Ansible role that populates configured symlinks.
+  description: Ansible role that creates the configured symlinks.
   company: Shared Vision Solutions
   license: MPL-2
   platforms:

@@ -1,0 +1,10 @@
+---
+
+symlinks_user: "{{ lookup('env', 'USER') }}"
+symlinks_ignore_errors: true
+
+symlinks:
+  - link: /Users/{{ symlinks_user }}/test1
+    target: /NonExistentFolder0001
+  - link: /Users/{{ symlinks_user }}/test2
+    target: /Users/{{ symlinks_user }}/Downloads

@@ -1,0 +1,26 @@
+---
+- name: Verify
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: Load Scenario Variables
+      include_vars: vars/main.yml
+    - name: Check Downloaded Content
+      ansible.builtin.stat:
+        path: "{{ item.link }}"
+      register: check_content
+      loop: "{{ symlinks }}"
+    - name: Assert Files Exist
+      assert:
+        that:
+          - item.stat.exists
+        msg: "{{ item.item.link }} does not exist."
+      loop: "{{ check_content.results }}"
+    - name: Assert Files Have Correct Attributes
+      assert:
+        that:
+          - item.stat.pw_name == symlinks_user
+          - item.stat.lnk_target == item.item.target
+          - item.stat.path == item.item.link
+        msg: "{{ item.item.link }} has wrong attributes."
+      loop: "{{ check_content.results }}"
