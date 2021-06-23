@@ -1,12 +1,10 @@
 # role-symlinks
 
 ### Master:
-- Travis CI: ![TravisCI](https://travis-ci.com/osx-provisioner/role-symlinks.svg?branch=master)
-- Github Actions: [![role-symlinks](https://github.com/osx-provisioner/role-symlinks/actions/workflows/push.yml/badge.svg?branch=master)](https://github.com/osx-provisioner/role-symlinks/actions/workflows/push.yml)
+[![role-symlinks](https://github.com/osx-provisioner/role-symlinks/actions/workflows/push.yml/badge.svg?branch=master)](https://github.com/osx-provisioner/role-symlinks/actions/workflows/push.yml)
 
 ### Production:
-- Travis CI: ![TravisCI](https://travis-ci.com/osx-provisioner/role-symlinks.svg?branch=production)
-- Github Actions: [![role-symlinks](https://github.com/osx-provisioner/role-symlinks/actions/workflows/push.yml/badge.svg?branch=production)](https://github.com/osx-provisioner/role-symlinks/actions/workflows/push.yml)
+[![role-symlinks](https://github.com/osx-provisioner/role-symlinks/actions/workflows/push.yml/badge.svg?branch=production)](https://github.com/osx-provisioner/role-symlinks/actions/workflows/push.yml)
 
 Ansible role that creates the configured symlinks.
 
@@ -61,7 +59,7 @@ Example Playbook
 License
 -------
 
-MPL-2
+MIT
 
 Author Information
 ------------------
